@@ -1,0 +1,14 @@
+body {
+    background: #e9e9e9;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #666;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
