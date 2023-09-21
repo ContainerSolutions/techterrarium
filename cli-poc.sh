@@ -24,7 +24,7 @@ function usage {
     echo ""
     echo "  -h          display help"
     echo ""
-    echo "Example: ./cstt.sh -i azure -s kubernetes -a simple -d flux"
+    echo "Example: $0 -i azure -s kubernetes -a simple -d flux"
     echo ""
     exit 1
 }
