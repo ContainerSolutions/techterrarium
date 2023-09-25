@@ -1,8 +1,3 @@
-# Azure Virtual Machine
- 
-provider "azurerm" {
-  features {}
-}
 
 resource "azurerm_resource_group" "aks-rg" {
   name     = "example-aks-rg"
