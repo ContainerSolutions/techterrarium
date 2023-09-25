@@ -72,12 +72,29 @@ echo "# Template for : $infra + $service + $app + $cicd" > README.md
 # Create an empty main.tf file (WIP)
 # touch infrastructure/main.tf
 
+# Function to download (and check) resources from the URL
+download() {
+  local url="$1"
+  local output_file="$2"
+  
+  if ! curl -o "$output_file" --fail --silent --show-error "$url"; then
+    echo ""
+    echo "------------------------------------------------"
+    echo "ERROR: Failed to download $output_file from:"
+    echo "$url"
+    echo "------------------------------------------------"
+    echo ""
+    exit 1
+  fi
+}
+
+
 base_url="https://raw.githubusercontent.com/ContainerSolutions/techterrarium/dawid"
 # Download the provider.tf file based on user input
-curl -o infrastructure/providers.tf $base_url/infrastructure/terraform/$infra/providers.tf
+download $base_url/infrastructure/terraform/$infra/providers.tf infrastructure/providers.tf
 
 # Download infra file based on user input
-curl -o infrastructure/main.tf $base_url/infrastructure/terraform/$infra/$service/main.tf
+download $base_url/infrastructure/terraform/$infra/$service/main.tf infrastructure/main.tf
 
 
 echo "--------------------"
