@@ -1,9 +1,10 @@
 #!/bin/bash
 
 
-while getopts i:s:a:d: flag
+while getopts p:i:s:a:d: flag
 do
 case "${flag}" in
+    p) project=${OPTARG};;
     i) infra=${OPTARG};;
     s) service=${OPTARG};;
     a) app=${OPTARG};;
@@ -17,14 +18,15 @@ function usage {
     echo ""
     echo "usage: $0 [params]"
     echo ""
+    echo "  -p (project)    pick name for your project"
     echo "  -i (infra)      pick infrastructure provider [local, azure, aws, gcp]"
     echo "  -s (service)    pick service [vm, kubernetes, serverless]"
     echo "  -a (app)        pick app to deploy [none, simple, 3tier]"
     echo "  -d (ci/cd)      pick ci/cd system [none, argocd, flux]"
     echo ""
-    echo "  -h          display help"
+    echo "  -h              display help"
     echo ""
-    echo "Example: $0 -i azure -s kubernetes -a simple -d flux"
+    echo "Example: $0 -p example_project -i azure -s kubernetes -a simple -d flux"
     echo ""
     exit 1
 }
@@ -36,22 +38,54 @@ function usage {
 		exit 1
 	fi
 
+# Validate cloud provider
+if [ "$infra" != "azure" ] && [ "$infra" != "aws" ] && [ "$infra" != "gcp" ]; then
+  echo "Invalid infrastructure. Supported options are: azure, aws, gcp"
+  exit 1
+fi
 
 echo ""
 echo "--------------------"
 echo "Generating code for:"
 echo "--------------------"
 echo ""
+echo "Project: $project"
 echo "Infra: $infra"
 echo "Service: $service"
 echo "App: $app"
 echo "CICD: $cicd"
 echo ""
+
+# Create a directory structure
+mkdir $project
+cd $project
+
+# Initialize a Git repository
+git init
+
+# Create directory structure
+mkdir infrastructure cicd app
+
+# Create a basic README file
+echo "# Template for : $infra + $service + $app + $cicd" > README.md
+
+# Create an empty main.tf file (WIP)
+# touch infrastructure/main.tf
+
+base_url="https://raw.githubusercontent.com/ContainerSolutions/techterrarium/dawid"
+# Download the provider.tf file based on user input
+curl -o infrastructure/providers.tf $base_url/infrastructure/terraform/$infra/providers.tf
+
+# Download infra file based on user input
+curl -o infrastructure/main.tf $base_url/infrastructure/terraform/$infra/$service/main.tf
+
+
 echo "--------------------"
 echo "Code generated..."
 echo "--------------------"
 echo ""
 echo "--------------------"
-echo "To deploy run \$terraform apply"
+echo "For deployment instructions read:"
+echo "$project/README.md"
 echo "--------------------"
 echo ""
