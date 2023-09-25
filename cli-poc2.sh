@@ -69,12 +69,16 @@ mkdir infrastructure cicd app
 # Create a basic README file
 echo "# Template for : $infra + $service + $app + $cicd" > README.md
 
-# Download the provider.tf file based on user input
-providers_url="https://raw.githubusercontent.com/ContainerSolutions/techterrarium/dawid/infrastructure/terraform"
-curl -o infrastructure/providers.tf $providers_url/$infra/providers.tf
+# Create an empty main.tf file (WIP)
+# touch infrastructure/main.tf
 
-# Create an empty main.tf file
-touch infrastructure/main.tf
+base_url="https://raw.githubusercontent.com/ContainerSolutions/techterrarium/dawid"
+# Download the provider.tf file based on user input
+curl -o infrastructure/providers.tf $base_url/infrastructure/terraform/$infra/providers.tf
+
+# Download infra file based on user input
+curl -o infrastructure/main.tf $base_url/infrastructure/terraform/$infra/$service/main.tf
+
 
 echo "--------------------"
 echo "Code generated..."
