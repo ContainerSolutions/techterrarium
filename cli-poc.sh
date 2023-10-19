@@ -26,7 +26,7 @@ function usage {
     echo ""
     echo "  -h              display help"
     echo ""
-    echo "Example: $0 -p example_project -i azure -s kubernetes -a simple -d flux"
+    echo "Example: $0 -p example_project -i azure -s kubernetes -a simple -d argocd"
     echo ""
     exit 1
 }
@@ -93,9 +93,13 @@ base_url="https://raw.githubusercontent.com/ContainerSolutions/techterrarium/daw
 # Download the provider.tf file based on user input
 download $base_url/infrastructure/terraform/$infra/providers.tf infrastructure/providers.tf
 
-# Download infra file based on user input
+# Download cicd file based on user input
 download $base_url/infrastructure/terraform/$infra/$service/main.tf infrastructure/main.tf
+download $base_url/infrastructure/terraform/$infra/$service/README.md infrastructure/main.tf
 
+# Download cicd file based on user input
+download $base_url/cicd/$cicd/main.tf cicd/main.tf
+download $base_url/cicd/$cicd/README.md cicd/README.md
 
 echo "--------------------"
 echo "Code generated..."
