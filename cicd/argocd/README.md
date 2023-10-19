@@ -7,4 +7,4 @@
 
 ## Installation instructions:
 
-WIP
+WORK IN PROGRESS...
