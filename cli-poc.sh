@@ -95,7 +95,7 @@ download $base_url/infrastructure/terraform/$infra/providers.tf infrastructure/p
 
 # Download cicd file based on user input
 download $base_url/infrastructure/terraform/$infra/$service/main.tf infrastructure/main.tf
-download $base_url/infrastructure/terraform/$infra/$service/README.md infrastructure/main.tf
+download $base_url/infrastructure/terraform/$infra/$service/README.md infrastructure/README.md
 
 # Download cicd file based on user input
 download $base_url/cicd/$cicd/main.tf cicd/main.tf
