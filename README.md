@@ -14,17 +14,9 @@ reusable environment where we can simulate infrastructure deployments, run
 experiments, and create demos.
 
 
-## Features
-
-- **Feature 1**: A brief description of a feature, etc.
-
-
 ## Getting Started
 
-1. **Prerequisites**: List any prerequisites or software needed to get your
-project running.
-2. **Installation**: Step-by-step guide on setting up your project.
-3. **Usage**: Basic instructions for using your project.
+-
 
 
 ## Contribution
@@ -33,22 +25,18 @@ We welcome contributions from the community! Please read our
 [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 
+## Roles and Responsibilities
+
+- **Project Lead**: Oversees the project, manages contributions, and ensures
+alignment with the project's goals. The current project lead is Julien Sudan.
+- **Project Sponsor**: Provides strategic guidance and support. This role is
+typically filled by a senior member of the organization or a C-level executive.
+- **Contributors**: Anyone who contributes to the project in various capacities,
+including coding, documentation, testing, and more. We value all contributions
+and encourage community members to participate.
+
+
 ## License
 
 This project is licensed under the Apache License 2.0 - see the
 [LICENSE](LICENSE) file for details.
-
-
-## Acknowledgements
-
-- Thanks to the people or organizations that have made significant contributions or
-provided inspiration, resources, etc.
-
----
-
-For more details, please check our [official documentation](#) or reach out to
-our [community forums](#).
-
----
-
-This is still very much a WIP with placeholders.
