@@ -1,0 +1,45 @@
+name: Bug Report
+description: Report a problem in TechTerrarium
+labels: [bug]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        *Before reporting:*
+        - Confirm the problem is reproducible on [**main**](https://github.com/ContainerSolutions/techterrarium)
+        - search [existing issues](https://github.com/ContainerSolutions/techterrarium/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+        - check the [FAQ](https://github.com/ContainerSolutions/techterrarium/blob/main/docs/FAQ.md)
+
+  - type: textarea
+    attributes:
+      label: "Problem"
+      description: "Describe the current behavior. May include logs, images, or videos."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Steps to reproduce"
+      description: |
+        - Please explain the necessary steps to reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "Describe the behavior you expect."
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: "Operating system/version"
+      placeholder: "macOS 11.5"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "Terminal name/version"
+      placeholder: "xterm 3.1"
+    validations:
+      required: true
