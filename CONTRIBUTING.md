@@ -109,6 +109,13 @@ commit's diff. To show the whole surrounding function of a change as context,
 use the `-W` argument as well.
 
 
+## Community Guidelines
+
+Our project follows certain guidelines to ensure a respectful and inclusive
+environment. Before contributing, please read our [Code of
+Conduct](CODE_OF_CONDUCT.md), which applies to all project interactions.
+
+
 ## Acknowledgement
 
 These contributing guidelines have been strongly inspired by the ones from
