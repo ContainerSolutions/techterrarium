@@ -1,0 +1,24 @@
+name: Feature request
+description: Request an enhancement for TechTerrarium
+labels: [enhancement]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Before requesting: search [existing issues](https://github.com/ContainerSolutions/techterrarium/labels/enhancement) and check the [FAQ](https://github.com/ContainerSolutions/techterrarium/blob/main/docs/FAQ.md).
+
+  - type: textarea
+    attributes:
+      label: "Problem"
+      description: "Describe the problem to be solved. Include references to other projects if relevant."
+      placeholder: "No example using with service mesh. Service mesh are useful because ..."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "Describe what the new feature or behavior would look like. How does it solve the problem? Is it worth the cost?"
+    validations:
+      required: true
