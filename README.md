@@ -14,11 +14,6 @@ reusable environment where we can simulate infrastructure deployments, run
 experiments, and create demos.
 
 
-## Getting Started
-
-TBD
-
-
 ## Contribution
 
 We welcome contributions from the community! Please read our
