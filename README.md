@@ -39,28 +39,27 @@ and encourage community members to participate.
 ## Roadmap
 
 1. **Commit code**
-- Repo showing the common knowledge of Cloud Native in CS
-  - Can be used as internally vested templates for new work assignments
+  - Repo showing some common knowledge of Cloud Native
   - Is an opportunity to dive into IDP and other technologies
   - Can be done incrementally on separate branches
   - Doesn't need to all fit together at first
 2. **Organize code around `example-voting-app` from Docker**
-- 0 to full IDP to deploy this app
+  - 0 to full IDP to deploy this app
   - Management cluster deployment using IaC
   - Managed child clusters where the voting app is deployed
   - All proper security measures around all this
   - Should work on one provider (or locally) first
   - This could be changed later on by a custom app example
 3. **Implement modularity**
-- Different providers can be used
+  - Different providers can be used
   - Different solutions/tools can be used
 4. **Implement tool(s) to deploy things**
-- First solution should be a CLI tool with minimal dependencies (maybe `gum`)
+  - First solution should be a CLI tool with minimal dependencies (maybe `gum`)
   - Possible to have multiple solutions, even a GUI
 5. **Project Website**
-- Have a publicly available website automatically generated
+  - Have a publicly available website automatically generated
 6. **Benchmarks and comparisons**
-- Benchmark first tools
+  - Benchmark first tools
   - Make first comparison page for benchmarked tools
 
 
