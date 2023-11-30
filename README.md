@@ -16,13 +16,13 @@ experiments, and create demos.
 
 ## Getting Started
 
--
+TBD
 
 
 ## Contribution
 
 We welcome contributions from the community! Please read our
-[CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+[`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 
 
 ## Roles and Responsibilities
@@ -30,14 +30,78 @@ We welcome contributions from the community! Please read our
 - **Project Lead**: Oversees the project, manages contributions, and ensures
 alignment with the project's goals. The current project lead is [Julien
 Sudan](https://github.com/ned-si).
-- **Project Sponsor**: Provides strategic guidance and support. This role is
-typically filled by a senior member of the organization or a C-level executive.
+- **Project Sponsor**: Provides strategic guidance and support.
 - **Contributors**: Anyone who contributes to the project in various capacities,
 including coding, documentation, testing, and more. We value all contributions
 and encourage community members to participate.
 
 
+## Roadmap
+
+1. **Commit code**
+- Repo showing the common knowledge of Cloud Native in CS
+  - Can be used as internally vested templates for new work assignments
+  - Is an opportunity to dive into IDP and other technologies
+  - Can be done incrementally on separate branches
+  - Doesn't need to all fit together at first
+2. **Organize code around `example-voting-app` from Docker**
+- 0 to full IDP to deploy this app
+  - Management cluster deployment using IaC
+  - Managed child clusters where the voting app is deployed
+  - All proper security measures around all this
+  - Should work on one provider (or locally) first
+  - This could be changed later on by a custom app example
+3. **Implement modularity**
+- Different providers can be used
+  - Different solutions/tools can be used
+4. **Implement tool(s) to deploy things**
+- First solution should be a CLI tool with minimal dependencies (maybe `gum`)
+  - Possible to have multiple solutions, even a GUI
+5. **Project Website**
+- Have a publicly available website automatically generated
+6. **Benchmarks and comparisons**
+- Benchmark first tools
+  - Make first comparison page for benchmarked tools
+
+
+## Project Structure
+
+Below is the tree structure of our project, providing a quick overview of the
+main files and directories:
+
+```
+.
+├── CONTRIBUTING.md
+├── docs
+│   └── FAQ.md
+├── LICENSE
+└── README.md
+```
+
+
+### Explanation of Key Components
+
+- **`CONTRIBUTING.md`**: This file contains guidelines for contributing to the
+project, including how to submit pull requests and our coding standards.
+- **`docs/`**: This directory holds all the additional documentation.
+    - **`FAQ.md`**: Frequently asked questions and their answers can be found
+    here. This is a good place to start if you're encountering issues or have
+    queries.
+- **`LICENSE`**: The license file details the terms under which the project can be
+used. We use the Apache License 2.0.
+- **`README.md`**: The README provides an overview of the project, including an
+introduction, how to get started, and how to use the project.
+
+
+## FAQ
+
+For any questions you might have about TechTerrarium, we've compiled a list of
+Frequently Asked Questions (FAQ). This document aims to address common queries
+and provide quick solutions to typical issues you might encounter. You can find
+the FAQ in the [`docs/FAQ.md`](docs/FAQ.md) file.
+
+
 ## License
 
 This project is licensed under the Apache License 2.0 - see the
-[LICENSE](LICENSE) file for details.
+[`LICENSE`](LICENSE) file for details.
