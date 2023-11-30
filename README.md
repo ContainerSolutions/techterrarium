@@ -72,10 +72,14 @@ main files and directories:
 ```
 .
 ├── CONTRIBUTING.md
+├── demos
+│   └── README.md
 ├── docs
 │   └── FAQ.md
 ├── LICENSE
-└── README.md
+├── README.md
+└── templates
+    └── README.md
 ```
 
 
@@ -83,6 +87,8 @@ main files and directories:
 
 - **`CONTRIBUTING.md`**: This file contains guidelines for contributing to the
 project, including how to submit pull requests and our coding standards.
+- **`demos/`**: Contains fully functional demo projects showcasing the use of
+TechTerrarium. Each demo has detailed instructions in its README.
 - **`docs/`**: This directory holds all the additional documentation.
     - **`FAQ.md`**: Frequently asked questions and their answers can be found
     here. This is a good place to start if you're encountering issues or have
@@ -91,6 +97,8 @@ project, including how to submit pull requests and our coding standards.
 used. We use the Apache License 2.0.
 - **`README.md`**: The README provides an overview of the project, including an
 introduction, how to get started, and how to use the project.
+- **`templates/`**: Reusable code templates that demonstrate specific
+functionalities or best practices. Each template is explained in its README.
 
 
 ## FAQ
