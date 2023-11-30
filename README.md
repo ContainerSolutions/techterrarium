@@ -103,6 +103,18 @@ and provide quick solutions to typical issues you might encounter. You can find
 the FAQ in the [`docs/FAQ.md`](docs/FAQ.md) file.
 
 
+## Code of Conduct
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+
+We are committed to providing a welcoming and inspiring community for all. Our
+Code of Conduct outlines our expectations for participant behavior, as well as
+the consequences for unacceptable behavior. We invite all those who participate
+in TechTerrarium to help us create safe and positive experiences for everyone.
+
+For more details, please see our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+
 ## License
 
 This project is licensed under the Apache License 2.0 - see the
