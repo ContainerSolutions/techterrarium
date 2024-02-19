@@ -18,16 +18,6 @@ experiments, and create demos.
 We welcome contributions from the community! Please read our
 [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 
-## Roles and Responsibilities
-
-- **Project Lead**: Oversees the project, manages contributions, and ensures
-alignment with the project's goals. The current project lead is [Julien
-Sudan](https://github.com/ned-si).
-- **Project Sponsor**: Provides strategic guidance and support.
-- **Contributors**: Anyone who contributes to the project in various capacities,
-including coding, documentation, testing, and more. We value all contributions
-and encourage community members to participate.
-
 ## Roadmap
 
 - **Commit code**
