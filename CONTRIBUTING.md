@@ -1,19 +1,17 @@
-# Contributing to TechTerrarium
+# Contributing to the Tech Terrarium
 
 ## Getting Started
 
 TBD
 
-
 ## Pull Requests (PRs)
 
 - To avoid duplicate work, create a draft PR.
 - Avoid cosmetic changes to unrelated files in the same commit.
-- Use [atomic commits]().
+- Use [atomic commits](atomic-commits).
 - Use a feature branch instead of the `main` branch.
 - Use a _rebase workflow_ for all PRs.
   - After addressing review comments, it's fine to force-push.
-
 
 ### Merging to `main`
 
@@ -23,7 +21,6 @@ For maintainers: when a PR is ready to merge to `main`,
 meaningful commit).
 - Prefer _Merge_ for "multi-commit PRs" (when the PR has multiple meaningful
 commits).
-
 
 ### Stages: Draft and Ready for review
 
@@ -40,14 +37,13 @@ of your PR: this just adds noise. Non-Draft PRs are assumed to be open for
 comments; if you want feedback from specific people, `@`-mention them in a
 comment.
 
-
 ### Commit messages
 
-Follow the [conventional commits guidelines][conventional-commits] to *make
-reviews easier* and to make the VCS/git logs more valuable. The general
+Follow the [conventional commits guidelines][conventional-commits] to *make*
+*reviews easier* and to make the VCS/git logs more valuable. The general
 structure of a commit message is:
 
-```
+```sh
 <type>([optional scope]): <description>
 
 [optional body]
@@ -57,10 +53,10 @@ structure of a commit message is:
 
 - Prefix the commit subject with one of these
 [_types_](https://github.com/commitizen/conventional-commit-types/blob/master/index.json):
-    - `build`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`,
-    `test`
-    - You can **ignore this for "fixup" commits** or any commits you expect to
-    be squashed.
+  - `build`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`,
+  `test`
+  - You can __ignore this for "fixup" commits__ or any commits you expect to
+  be squashed.
 - Append optional scope to _type_ such as `(argocd)`, `(demo-x)`, etc.
 - _Description_ shouldn't start with a capital letter or end in a period.
 - Use the _imperative voice_: "fix bug" rather than "fixed bug" or "fixes bug."
@@ -69,7 +65,8 @@ structure of a commit message is:
 - Breaking changes must be indicated by
     1. "!" after the type/scope, and
     2. a "BREAKING CHANGE" footer describing the change. Example:
-    ```
+
+    ```sh
     refactor(provider)!: drop support for Python 2
 
        BREAKING CHANGE: refactor to use Python 3 features since Python 2 is no
@@ -82,16 +79,13 @@ structure of a commit message is:
 
 TBD
 
-
 ### Style
 
 TBD
 
-
 ## Documentation
 
 TBD
-
 
 ## Reviewing
 
@@ -103,24 +97,16 @@ request:
 gh pr checkout <pr-link>
 ```
 
-Use [`git log -p main..FETCH_HEAD`][git-history-filtering] to list all commits
-in the feature branch which aren't in the `main` branch; `-p` shows each
-commit's diff. To show the whole surrounding function of a change as context,
-use the `-W` argument as well.
-
-
 ## Community Guidelines
 
 Our project follows certain guidelines to ensure a respectful and inclusive
 environment. Before contributing, please read our [Code of
 Conduct](CODE_OF_CONDUCT.md), which applies to all project interactions.
 
-
 ## Acknowledgement
 
 These contributing guidelines have been strongly inspired by the ones from
 [Neovim](neovim)
-
 
 [atomic-commits]: https://en.wikipedia.org/wiki/Atomic_commit
 [pr-draft]:
