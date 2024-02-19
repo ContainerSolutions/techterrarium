@@ -2,7 +2,31 @@
 
 ## Getting Started
 
-TBD
+Welcome to the Tech Terrarium project! Here's how to get started as a
+contributor:
+
+- **Familiarize Yourself with the Project**: Start by reading the README,
+CONTRIBUTING, and CODE_OF_CONDUCT documents to understand the project's scope,
+contribution process, and community guidelines.
+- **Set Up Your Development Environment**:
+  - Clone the repository
+  - Set up any required environment variables or configuration files as
+  documented in the project's README or in specific documentation within the
+  `docs/` directory.
+3. **Choose an Issue to Work On or Create a New One**: Look at the project's
+issues tagged with `good first issue` or `help wanted` to find tasks suitable
+for new contributors. If you have an idea for a new feature or notice a problem
+that hasn't been reported yet, please feel free to create a new issue. When
+creating a new issue, provide a clear and concise description of the feature or
+problem, including any relevant details or examples that can help others
+understand your proposal or the issue you're reporting. This proactive approach
+helps us continuously improve the project and ensures that we're addressing the
+needs of our users and contributors. Feel free to ask questions in the issue
+comments if you need more information before starting or if you're seeking
+feedback on your idea.
+- **Communicate Your Intent**: Before you start working on an issue, comment on
+it expressing your intention to work on it. This helps prevent duplicate efforts
+from other contributors.
 
 ## Pull Requests (PRs)
 
@@ -77,15 +101,55 @@ structure of a commit message is:
 
 ### Lint
 
-TBD
+We enforce coding standards and strive for consistency across our codebase with
+the help of linting tools. Here's how you can lint your code:
+
+- **Install Linting Tools**: Ensure you have installed all the necessary linting
+tools mentioned in the project's `README.md` or `docs/development.md`.
+  - Tools actually have TBD.
+- **Run Linters Locally**: Before submitting your pull request, run the linters
+locally to find and fix any style or syntax issues.
+- **Fix Linting Issues**: Address any linting issues detected by the tools. If
+you're unsure how to fix a specific issue, consult the project's documentation
+or ask for guidance in a comment on your pull request.
 
 ### Style
 
-TBD
+To maintain code readability and consistency, we adhere to specific coding style
+guidelines. While linting will catch many issues, here are general principles to
+follow:
+
+- **Follow Language-Specific Style Guides**: Adhere to widely accepted style
+guides for the language you're working in.
+- **Readable Code**: Write code that's clean and understandable. Use meaningful
+variable and function names, avoid overly complex constructions, and break down
+large functions into smaller, manageable pieces.
+- **Commenting and Documentation**: Comment your code where necessary to explain
+"why" behind a logic, not just "what" the code does. Update or add documentation
+for public APIs, features, and complex logic.
+- **Consistent Formatting**: Use the project's existing code formatting
+conventions regarding indentation, brackets, line length, etc. If the project
+uses a formatter like Prettier or Black, make sure to apply it to your changes.
+  - This needs TBD as well.
 
 ## Documentation
 
-TBD
+High-quality documentation is crucial for open-source projects. Here's how you
+can contribute to ours:
+
+- **Update Documentation With New Features**: If you're adding a new feature or
+changing existing functionality, update the relevant documentation. This
+includes inline code comments, API documentation, and user guides in the `docs/`
+directory.
+- **Improve Clarity and Accuracy**: Feel free to submit pull requests that
+improve the clarity, accuracy, or completeness of our documentation. This could
+involve rephrasing for better understanding, correcting inaccuracies, or adding
+missing details.
+- **Examples and Tutorials**: Where applicable, add examples or tutorials that
+demonstrate new features or complex use cases. This helps users and new
+contributors understand how to use the project more effectively.
+- **Keep It Accessible**: Write documentation that is accessible to people with
+different levels of expertise
 
 ## Reviewing
 
